@@ -1,0 +1,2 @@
+Could remove Routes and can go with API Keys or with OAuth 2.0
+Could encrypt the Id instead of passing them on the url browser ( to mitigate the security risks)
