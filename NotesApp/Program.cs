@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Builder;
+using static System.Net.Mime.MediaTypeNames;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,11 +18,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();

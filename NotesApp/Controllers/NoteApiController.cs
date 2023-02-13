@@ -41,6 +41,8 @@ namespace NotesApp.Controllers
         {
             note.Id = ++currentid;
             notes.Add(note);
+            Response.Headers.Add("Access-Control-Allow-Origin", "https://localhost:44367");
+
             return CreatedAtAction(nameof(GetNoteById), new { id = note.Id }, note);
         }
 
